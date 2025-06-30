@@ -15,6 +15,6 @@
 		}
 	},
     "postCreateCommand": "go install google.golang.org/protobuf/cmd/protoc-gen-go@latest",
-    "forwardPorts": [10123],
+    "forwardPorts": [8080],
     "postStartCommand": "protoc -I='shared' --go_out='server' 'shared/packets.proto'"
 }
